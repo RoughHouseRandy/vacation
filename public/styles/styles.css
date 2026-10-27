@@ -11,6 +11,7 @@ body {
     align-items:center;
     justify-content:center;
     width:90%;
+    min-height: 100vh;
     margin: 0 auto;
     gap:5rem;
 }
@@ -18,10 +19,18 @@ body {
 #header-section{
     color:white;
     display:flex;
+    padding:2rem;
     justify-content:center;
     background-image: url('https://bit.ly/305-vacation');
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+}
+
+input {
+    border-radius:1rem;
+}
+select {
+    border-radius:1rem;
 }
 
 #vacation-form {
@@ -81,7 +90,11 @@ button:hover {
 #footer {
     width:100%;
     color:white;
-    
+    padding:2rem;
     margin-top:3rem;
     background-color:blueviolet;
+    text-align:center;
+}
+a {
+    color:white;
 }
