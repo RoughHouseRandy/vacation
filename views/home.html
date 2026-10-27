@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="scripts/scripts.js" defer></script>
+    <title>Vacation</title>
+</head>
+<body>
+    <main>
+        <div id="main">
+            <!-- Form -->
+            <form id="vacation-form" action="/submit-order" method="post" novalidate>
+                <div id="header-section">
+                    <h1> Book Your Dream Vacation</h1> 
+                </div>
+                <div id="destination-field">
+                    <span class="err" id="destination-err">Must choose a destination</span>
+                    <label for="destination">Destination</label>
+                    <select id="destination" name="destination">
+                        <option value="none">Choose a destination ...</option>
+                        <option value="vietnam">Da Nang, Vietnam</option>
+                        <option value="peru"> Lima, Peru</option>
+                         <option value="usa">New York, USA</option>
+                        <option value="japan">Tokyo, Japan</option>
+                        <option value="canada"> Vancouver British Columbia, Canada</option>                        
+                    </select>
+                </div>
+                <div id="departure-traveler">
+                    <div id="departure-field">
+                        <label for="departure">Departure Date</label>
+                        <input type="date" id="departure" name="departure">
+                    </div>
+                    <div id="traveler-field">
+                        <span class="err" id="traveler-err">Travelers must be greater than 0</span>
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" name="travelers" value="0">
+                    </div>
+                </div>
+                <!-- Find My Vacation Button -->
+                <button type="submit" id="submit-button">Find My Vacation</button>
+            </form>
+        </div>
+    </main>
+    <div id="footer">
+            <footer>
+                <a href="">github</a>
+            </footer>
+        </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    background-color:rgb(161, 161, 255);
+}
+
+#main {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:90%;
+    margin: 0 auto;
+    gap:5rem;
+}
+
+#header-section{
+    color:white;
+    display:flex;
+    justify-content:center;
+    background-image: url('https://bit.ly/305-vacation');
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+#vacation-form {
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    border-radius:.5rem;
+}
+
+#destination-field{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:2rem;
+    gap:.5rem;
+}
+
+#destination-field input {
+    width:100%;
+}
+
+#departure-traveler {
+    display:flex;
+    margin:2rem;
+    gap:1rem;
+    width:100%;
+}
+
+#departure-field {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#traveler-field {
+    display:flex;
+    flex-direction:column;
+}
+
+.err {
+    color: red;
+    display:none;
+}
+
+button {
+    background-color:blueviolet;
+    color:white;
+    padding:1rem;
+    border-radius:.5rem;
+}
+
+button:hover {
+    color:aqua;
+    background-color:blue;
+}
+
+#footer {
+    width:100%;
+    color:white;
+    
+    margin-top:3rem;
+    background-color:blueviolet;
+}
